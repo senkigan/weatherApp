@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/img/icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div id="center-div">
+        {{>header}}
+        {{>footer}}
+
+        <h2>Type your location and get started</h2>
+
+        <div id="form-container">
+            <form>
+                <input class="search-input" placeholder="Search location">
+                <input id="loupe" type="image" height="24" name="submit" src="/img/loupe.png" alt="Submit"/>
+                <button class="search-button">Search</button>
+            </form>
+        </div>
+
+        <div class="weather-cnt">
+            <p class="weather-p" id="paragraph"></p>
+            <p class="weather-p" id="paragraph2"></p>
+        </div>
+
+        {{>footah}}
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
