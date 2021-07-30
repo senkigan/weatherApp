@@ -7,7 +7,7 @@ Clone the repo an start the server:
 
 Then on the terminal in the root folder:
 
-`git install`
+`npm install`
 
 `npm run start`
 
