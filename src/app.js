@@ -1,5 +1,6 @@
-const path = require("path")
+﻿const path = require("path")
 const express = require("express")
+const compression = require("compression")
 const hbs = require("hbs")
 const forecast = require("./utils/forecast")
 
@@ -22,6 +23,9 @@ hbs.registerPartials(partialsPaths)
 
 // Use static directory
 app.use(express.static(publicDirectoryPath))
+
+// Compress responses middleware
+app.use(compression())
 
 
 app.get('', (req, res) => {
