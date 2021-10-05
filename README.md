@@ -1,7 +1,7 @@
 # weatherApp
 A web app that shows you the weather of any given location.
 
-Clone the repo an start the server:
+Clone the repo and start the server:
 
 `git clone https://github.com/senkigan/weatherApp/`
 
